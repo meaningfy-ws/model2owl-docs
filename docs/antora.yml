@@ -1,0 +1,6 @@
+name: ROOT
+version: 0.0.1
+title: model2owl documentation
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
