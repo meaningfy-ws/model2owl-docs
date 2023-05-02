@@ -1,5 +1,7 @@
 # model2owl-docs
 
+[Read online](https://meaningfy-ws.github.io/model2owl-docs/0.0.1/index.html)
+
 This repository covers the documentation for [model2owl project](https://github.com/OP-TED/model2owl). 
 
 model2owl if a set of tools for transforming UML (v2.5) model from its XMI (v2.5.1) serialisation into an OWL formal ontology, SHACl data shapes ad glossary. This transformation is performed using XSLT stylesheets under the assumption that the UML model conforms to the set of conventions outlined in the documentation. 

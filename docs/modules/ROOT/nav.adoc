@@ -12,6 +12,7 @@
 ** xref:uml/conv-datatypes.adoc[uml:DataType]
 ** xref:uml/conv-packages.adoc[uml:Package]
 ** xref:uml/conv-connectors.adoc[UML Connector Elements]
-* xref:checkers/model2owl-checkers.adoc[UML convention checking rules]
+// * xref:checkers/model2owl-checkers.adoc[UML convention checking rules]
+* xref:attachment$ePO_UML_conceptual_model_checkers_inventory_V3.xlsx[UML convention checking rules]
 * xref:transformation/uml2owl-transformation.adoc[Transformation Rules]
 * xref:references.adoc[References]
