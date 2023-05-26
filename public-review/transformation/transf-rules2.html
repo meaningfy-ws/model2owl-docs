@@ -292,14 +292,13 @@ Ideally, in the implementation, this rule would be combined with the relevant ru
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 1. Property declaration in Turtle syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-Turtle hljs" data-lang="Turtle">:relationName a owl:ObjectProperty ;
-.</code></pre>
+<pre class="highlightjs highlight"><code class="language-Turtle hljs" data-lang="Turtle">:relationName a owl:ObjectProperty .</code></pre>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 2. Property declaration in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/relationName"&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/relationName"&gt;
 &lt;/owl:ObjectProperty&gt;</code></pre>
 </div>
 </div></div></td>
@@ -363,11 +362,11 @@ shape:ClassName-relationName a sh:PropertyShape ;
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 4. PropertyShape declaration for associations in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about="http://base.shape.uri/ClassName"&gt;
-  &lt;sh:property rdf:resource="http://base.shape.uri/ClassName-relationName"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about = "http://base.shape.uri/ClassName"&gt;
+    &lt;sh:property rdf:resource = "http://base.shape.uri/ClassName-relationName"/&gt;
 &lt;/rdf:Description&gt;
-&lt;sh:PropertyShape rdf:about="http://base.shape.uri/ClassName-relationName"&gt;
-  &lt;sh:path rdf:resource="http://base.onto.uri/relationName"/&gt;
+&lt;sh:PropertyShape rdf:about = "http://base.shape.uri/ClassName-relationName"&gt;
+    &lt;sh:path rdf:resource = "http://base.onto.uri/relationName"/&gt;
 &lt;/sh:PropertyShape&gt;</code></pre>
 </div>
 </div></div></td>
@@ -403,8 +402,8 @@ shape:ClassName-relationName a sh:PropertyShape ;
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 6. Domain specification in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/relationName"&gt;
-  &lt;rdfs:domain rdf:resource="http://base.onto.uri/ClassName"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/relationName"&gt;
+    &lt;rdfs:domain rdf:resource = "http://base.onto.uri/ClassName"/&gt;
 &lt;/owl:ObjectProperty&gt;</code></pre>
 </div>
 </div></div></td>
@@ -440,8 +439,8 @@ shape:ClassName-relationName a sh:PropertyShape ;
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 8. Range specification in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/relationName"&gt;
-  &lt;rdfs:range rdf:resource="http://base.onto.uri/ClassName"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/relationName"&gt;
+    &lt;rdfs:range rdf:resource = "http://base.onto.uri/ClassName"/&gt;
 &lt;/owl:ObjectProperty&gt;</code></pre>
 </div>
 </div></div></td>
@@ -478,8 +477,8 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 10. Property class constraint in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about="http://base.shape.uri/ClassName-relationName"&gt;
-  &lt;sh:class rdf:resource="http://base.onto.uri/OtherClass"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about = "http://base.shape.uri/ClassName-relationName"&gt;
+    &lt;sh:class rdf:resource = "http://base.onto.uri/OtherClass"/&gt;
 &lt;/rdf:Description&gt;</code></pre>
 </div>
 </div></div></td>
@@ -509,22 +508,22 @@ shape:ClassName-relationName
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Turtle hljs" data-lang="Turtle">:ClassName a owl:Class ;
   rdfs:subClassOf [ a owl:Restriction ;
-      owl:minCardinality "1"^^xsd:integer;
-      owl:onProperty :relationName ;
-    ] ;
+    owl:minCardinality "1"^^xsd:integer;
+    owl:onProperty :relationName ;
+  ] ;
 .</code></pre>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 12. Min cardinality restriction in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:Class rdf:about="http://base.onto.uri/ClassName"&gt;
-  &lt;rdfs:subClassOf&gt;
-    &lt;owl:Restriction&gt;
-      &lt;owl:onProperty rdf:resource="http://base.onto.uri/relationName"/&gt;
-      &lt;owl:minCardinality rdf:datatype="http://www.w3.org...#integer" &gt;1&lt;/owl:cardinality&gt;
-    &lt;/owl:Restriction&gt;
-  &lt;/rdfs:subClassOf&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:Class rdf:about = "http://base.onto.uri/ClassName"&gt;
+    &lt;rdfs:subClassOf&gt;
+        &lt;owl:Restriction&gt;
+            &lt;owl:onProperty rdf:resource = "http://base.onto.uri/relationName"/&gt;
+            &lt;owl:minCardinality rdf:datatype="http://www.w3.org...#integer" &gt;1&lt;/owl:cardinality&gt;
+        &lt;/owl:Restriction&gt;
+    &lt;/rdfs:subClassOf&gt;
 &lt;/owl:Class&gt;</code></pre>
 </div>
 </div></div></td>
@@ -555,8 +554,8 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 14. Declaring a functional property in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about="http://base.onto.uri/relationName"&gt;
-  &lt;rdf:type rdf:resource="http://...owl#FunctionalProperty"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about = "http://base.onto.uri/relationName"&gt;
+    &lt;rdf:type rdf:resource = "http://...owl#FunctionalProperty"/&gt;
 &lt;/rdf:Description&gt;</code></pre>
 </div>
 </div></div></td>
@@ -592,8 +591,8 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 16. Min cardinality constraint in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about="http://base.shape.uri/ClassName-relationName"&gt;
-  &lt;sh:minCount rdf:datatype="http://www.w3.org...#integer"
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about = "http://base.shape.uri/ClassName-relationName"&gt;
+    &lt;sh:minCount rdf:datatype="http://www.w3.org...#integer"
       &gt;1&lt;/sh:minCount&gt;
 &lt;/rdf:Description&gt;</code></pre>
 </div>
@@ -637,8 +636,8 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 18. Declaring an asymmetric property in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about="http://base.onto.uri/relatesTo"&gt;
-  &lt;rdf:type rdf:resource="http://...owl#AsymmetricProperty"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about = "http://base.onto.uri/relatesTo"&gt;
+    &lt;rdf:type rdf:resource = "http://...owl#AsymmetricProperty"/&gt;
 &lt;/rdf:Description&gt;</code></pre>
 </div>
 </div></div></td>
@@ -668,28 +667,30 @@ shape:ClassName-relationName
 @prefix sh: &lt;http://www.w3.org/ns/shacl#&gt; .
 
 shape:ClassName
-   sh:sparql [
-     sh:select """
-        SELECT ?this ?that
-        WHERE {
+  sh:sparql [
+    sh:select """
+      SELECT ?this ?that
+      WHERE {
         ?this :relatesTo ?that .
         ?that :relatesTo ?this .
-        }""" ; ] ;
+      }
+    """ ;
+  ] ;
 .</code></pre>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 20. Declaring an asymmetric property in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about="http://base.shape.uri/ClassName"&gt;
-  &lt;sh:sparql rdf:parseType="Resource"&gt;
-    &lt;sh:select&gt;
-      SELECT ?this ?that
-      WHERE {
-      ?this :relatesTo ?that .
-      ?that :relatesTo ?this .}
-    &lt;/sh:select&gt;
-  &lt;/sh:sparql&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about = "http://base.shape.uri/ClassName"&gt;
+    &lt;sh:sparql rdf:parseType="Resource"&gt;
+        &lt;sh:select&gt;
+          SELECT ?this ?that
+          WHERE {
+            ?this :relatesTo ?that .
+            ?that :relatesTo ?this .}
+        &lt;/sh:select&gt;
+    &lt;/sh:sparql&gt;
 &lt;/rdf:Description&gt;</code></pre>
 </div>
 </div></div></td>
@@ -732,8 +733,8 @@ shape:ClassName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 22. Declaring an inverse property in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/relatesTo"&gt;
-  &lt;owl:inverseOf rdf:resource="http://base.onto.uri/isRelatedTo"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/relatesTo"&gt;
+    &lt;owl:inverseOf rdf:resource = "http://base.onto.uri/isRelatedTo"/&gt;
 &lt;/owl:ObjectProperty&gt;</code></pre>
 </div>
 </div></div></td>
@@ -768,16 +769,16 @@ shape:ClassName
 <div class="title">Listing 23. Range specification in Turtle syntax</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Turtle hljs" data-lang="Turtle">:relationName a owl:ObjectProperty ;
-	rdfs:range skos:Concept ;
-	.</code></pre>
+  rdfs:range skos:Concept ;
+.</code></pre>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 24. Range specification in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/relationName"&gt;
-	&lt;rdfs:range rdf:resource=".../02/skos/core#Concept"/&gt;
-	&lt;/owl:ObjectProperty&gt;</code></pre>
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/relationName"&gt;
+    &lt;rdfs:range rdf:resource = ".../02/skos/core#Concept"/&gt;
+&lt;/owl:ObjectProperty&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -837,8 +838,8 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 26. Property class constraint in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about="http://base.shape.uri/ClassName-relationName"&gt;
-  &lt;sh:class rdf:resource="http://base.onto.uri/EnumerationName"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;rdf:Description rdf:about = "http://base.shape.uri/ClassName-relationName"&gt;
+    &lt;sh:class rdf:resource = "http://base.onto.uri/EnumerationName"/&gt;
 &lt;/rdf:Description&gt;</code></pre>
 </div>
 </div></div></td>
@@ -887,12 +888,12 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 28. Subclass declaration in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:Class rdf:about="http://base.onto.uri/ClassName"&gt;
-  &lt;rdfs:subClassOf rdf:resource="http://base.onto.uri/SuperClass"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:Class rdf:about = "http://base.onto.uri/ClassName"&gt;
+    &lt;rdfs:subClassOf rdf:resource = "http://base.onto.uri/SuperClass"/&gt;
 &lt;/owl:Class&gt;
-&lt;owl:Class rdf:about="http://base.onto.uri/OtherClass"&gt;
-  &lt;rdfs:subClassOf rdf:resource="http://base.onto.uri/SuperClass"/&gt;
-  &lt;owl:disjointWith rdf:resource="http://base.onto.uri/ClassName"/&gt;
+&lt;owl:Class rdf:about = "http://base.onto.uri/OtherClass"&gt;
+    &lt;rdfs:subClassOf rdf:resource = "http://base.onto.uri/SuperClass"/&gt;
+    &lt;owl:disjointWith rdf:resource = "http://base.onto.uri/ClassName"/&gt;
 &lt;/owl:Class&gt;</code></pre>
 </div>
 </div></div></td>
@@ -936,11 +937,11 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 30. Property specialisation in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/hasSister"&gt;
-  &lt;rdfs:subPropertyOf rdf:resource="http://base.onto.uri/relatesTo"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/hasSister"&gt;
+    &lt;rdfs:subPropertyOf rdf:resource = "http://base.onto.uri/relatesTo"/&gt;
 &lt;/owl:ObjectProperty&gt;
-&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/isSisterOf"&gt;
-  &lt;rdfs:subPropertyOf rdf:resource="http://base.onto.uri/isRelatedTo"/&gt;
+&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/isSisterOf"&gt;
+    &lt;rdfs:subPropertyOf rdf:resource = "http://base.onto.uri/isRelatedTo"/&gt;
 &lt;/owl:ObjectProperty&gt;</code></pre>
 </div>
 </div></div></td>
@@ -980,8 +981,8 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 32. Class equivalence in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:Class rdf:about="http://base.onto.uri/ClassName"&gt;
-  &lt;owl:equivalentClass rdf:resource="http://base.onto.uri/SuperClass"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:Class rdf:about = "http://base.onto.uri/ClassName"&gt;
+    &lt;owl:equivalentClass rdf:resource = "http://base.onto.uri/SuperClass"/&gt;
 &lt;/owl:Class&gt;</code></pre>
 </div>
 </div></div></td>
@@ -1016,11 +1017,11 @@ shape:ClassName-relationName
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="title">Listing 34. Property equivalence in RDF/XML syntax</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/hasSister"&gt;
-  &lt;owl:equivalentProperty rdf:resource="http://base.onto.uri/relatesTo"/&gt;
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/hasSister"&gt;
+  &lt;owl:equivalentProperty rdf:resource = "http://base.onto.uri/relatesTo"/&gt;
 &lt;/owl:ObjectProperty&gt;
-&lt;owl:ObjectProperty rdf:about="http://base.onto.uri/isSisterOf"&gt;
-  &lt;owl:equivalentProperty rdf:resource="http://base.onto.uri/isRelatedTo"/&gt;
+&lt;owl:ObjectProperty rdf:about = "http://base.onto.uri/isSisterOf"&gt;
+  &lt;owl:equivalentProperty rdf:resource = "http://base.onto.uri/isRelatedTo"/&gt;
 &lt;/owl:ObjectProperty&gt;</code></pre>
 </div>
 </div></div></td>
