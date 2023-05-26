@@ -19,7 +19,7 @@ Most of the UML elements are named. The UML conventions dedicate an extensive se
 
 [#rule:element-label-core,source,XML,caption='',title='{example-caption} {counter:rule-cnt:T.01}. Label -- in core ontology layer',reftext='{example-caption} {rule-cnt}']
 ====
-Specify a label for UML element. *TODO:* Update
+Specify a label for the OWL entity based on the name of the UML element.
 ====
 
 [cols="a,a", options="noheader"]
@@ -36,8 +36,8 @@ Specify a label for UML element. *TODO:* Update
 .Labels in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.onto.uri/ResourceName">
-  <skos:prefLabel xml:lang="en">Resource name</skos:prefLabel>
+<rdf:Description rdf:about = "http://base.onto.uri/ResourceName">
+    <skos:prefLabel xml:lang="en">Resource name</skos:prefLabel>
 </rdf:Description>
 ----
 |===
@@ -45,7 +45,7 @@ Specify a label for UML element. *TODO:* Update
 
 [#rule:element-label-ds,source,XML,caption='',title='{example-caption} {counter:rule-cnt:T.01}. Label -- in data shape layer',reftext='{example-caption} {rule-cnt}']
 ====
-Specify a label for UML element. *TODO:* Update
+Specify a label for the SHACL shape, based on the name of the UML element.
 ====
 
 [cols="a,a", options="noheader"]
@@ -65,8 +65,8 @@ shape:ClassName
 .Label declaration for NodeShape in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.shape.uri/ClassName">
-  <rdfs:label>Class name</rdfs:label>
+<rdf:Description rdf:about = "http://base.shape.uri/ClassName">
+    <rdfs:label>Class name</rdfs:label>
 </rdf:Description>
 ----
 
@@ -85,8 +85,8 @@ shape:ClassName-PropertyName
 .Label declaration for PropertyShape in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.shape.uri/ClassName-PropertyName">
-  <sh:name>Property name</sh:name>
+<rdf:Description rdf:about = "http://base.shape.uri/ClassName-PropertyName">
+    <sh:name>Property name</sh:name>
 </rdf:Description>
 ----
 |===
@@ -99,7 +99,7 @@ By default, we recommend the use of the SKOS lexicalization (`skos:definition`) 
 
 [#rule:element-definition-core,source,XML,caption='',title='{example-caption} {counter:rule-cnt:D.1}. Description -- in core ontology layer',reftext='{example-caption} {rule-cnt}']
 ====
-Specify a description for UML element. *TODO:* Update
+Specify a description for the OWL entity based on the note on the UML element.
 ====
 
 [cols="a,a", options="noheader"]
@@ -116,15 +116,15 @@ Specify a description for UML element. *TODO:* Update
 .Description in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.onto.uri/ResourceName">
-  <skos:definition xml:lang="en">Description of the resource meaning</skos:definition>
+<rdf:Description rdf:about = "http://base.onto.uri/ResourceName">
+    <skos:definition xml:lang="en">Description of the resource meaning</skos:definition>
 </rdf:Description>
 ----
 |===
 
 [#rule:element-definition-ds,source,XML,caption='',title='{example-caption} {counter:rule-cnt:D.1}. Description -- in data shape layer',reftext='{example-caption} {rule-cnt}']
 ====
-Specify a description for UML element. *TODO:* Update
+Specify an annotation (comment or description) for the SHACL shape based on the note on the UML element.
 ====
 
 [cols="a,a", options="noheader"]
@@ -144,8 +144,8 @@ shape:ClassName
 .Note declaration for NodeShape in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.shape.uri/ClassName">
-  <rdfs:comment>Description of the meaning of the class</rdfs:label>
+<rdf:Description rdf:about = "http://base.shape.uri/ClassName">
+    <rdfs:comment>Description of the meaning of the class</rdfs:label>
 </rdf:Description>
 ----
 
@@ -164,8 +164,8 @@ shape:ClassName-PropertyName
 .Note declaration for PropertyShape in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.shape.uri/ClassName-PropertyName">
-  <sh:description>Description of the meaning of the property</sh:description>
+<rdf:Description rdf:about = "http://base.shape.uri/ClassName-PropertyName">
+    <sh:description>Description of the meaning of the property</sh:description>
 </rdf:Description>
 ----
 |===
@@ -187,7 +187,7 @@ By default, we recommend the use of the SKOS lexicalization (`skos:editorialNote
 
 [#rule:element-external-comment-core,source,XML,caption='',title='{example-caption} {counter:rule-cnt:D.1}. Comment -- in core ontology layer',reftext='{example-caption} {rule-cnt}']
 ====
-Specify annotation axiom for UML Comment associated to a UML element.
+Specify an annotation axiom (comment or editorial note) on the OWL entity for the UML Comment associated to a UML element.
 ====
 
 [cols="a,a", options="noheader"]
@@ -204,15 +204,15 @@ Specify annotation axiom for UML Comment associated to a UML element.
 .Comment in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.onto.uri/ClassName">
-  <skos:editorialNote xml:lang="en">This is an additional comment on ClassName</skos:editorialNote>
+<rdf:Description rdf:about = "http://base.onto.uri/ClassName">
+    <skos:editorialNote xml:lang="en">This is an additional comment on ClassName</skos:editorialNote>
 </rdf:Description>
 ----
 |===
 
 [#rule:element-external-comment-ds,source,XML,caption='',title='{example-caption} {counter:rule-cnt:D.1}. Comment -- in data shape layer',reftext='{example-caption} {rule-cnt}']
 ====
-Specify an annotation on the data shape for the UML Comment associated to a UML element.
+Specify an annotation axiom (comment or description) on the SHACL shape for the UML Comment associated to a UML element.
 ====
 
 [cols="a,a", options="noheader"]
@@ -232,8 +232,8 @@ shape:ClassName
 .Note declaration for NodeShape in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.shape.uri/ClassName">
-  <rdfs:comment>This is an additional comment on ClassName</rdfs:label>
+<rdf:Description rdf:about = "http://base.shape.uri/ClassName">
+    <rdfs:comment>This is an additional comment on ClassName</rdfs:label>
 </rdf:Description>
 ----
 
@@ -253,8 +253,8 @@ shape:ClassName-PropertyName
 .Note declaration for PropertyShape in RDF/XML syntax
 [source,XML]
 ----
-<rdf:Description rdf:about="http://base.shape.uri/ClassName-PropertyName">
-  <sh:description>This is an additional comment on PropertyName</sh:description>
+<rdf:Description rdf:about = "http://base.shape.uri/ClassName-PropertyName">
+    <sh:description>This is an additional comment on PropertyName</sh:description>
 </rdf:Description>
 ----
 WARNING: *QUESTION:* should we use here `rdfs:comment` instead of adding a second value to `sh:description`?
