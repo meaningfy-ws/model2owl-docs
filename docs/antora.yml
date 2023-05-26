@@ -1,6 +1,17 @@
 name: ROOT
-version: 0.0.1
-title: model2owl documentation
+version: public-review
+title: model2owl Documentation
 start_page: ROOT:index.adoc
+asciidoc:
+  attributes:
+    imagesdir: images
+    xrefstyle: short@
+    example-caption: Rule@
+    example-refsig: Rulota
+    listing-caption: Listing@
+    listing-refsig: Listing
+    table-refsig: Tabella
+    counter: rule-cnt@
 nav:
   - modules/ROOT/nav.adoc
+
