@@ -1,6 +1,7 @@
 [[sec:uml-package]]
 == Conventions on uml:Package elements
 
+[[rule:package-partitioning]]
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Partitioning of the model
@@ -16,8 +17,9 @@ Packages should be used to define a logical partition of the model.
 
 Packages should be used to define a logical partition of the model. They serve as the primary method for the vertical slicing of the conceptual model as described in the layering and slicing section of [xref:references.adoc#ref:costetchi2020a[costetchi2020a]].
 
-*See also:* SEMIC Style Guide Rule [https://semiceu.github.io/style-guide/public-review/gc-conceptual-model-conventions.html#sec:cmc-r15[CMC-R15]]
+*See also:* SEMIC Style Guide Rule [https://semiceu.github.io/style-guide/1.0.0/gc-conceptual-model-conventions.html#sec:cmc-r15[CMC-R15]]
 
+[[rule:package-hierarchy]]
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Hierarchy of packages
@@ -33,6 +35,7 @@ Packages may form hierarchies.
 
 Packages may form hierarchies. In this case the hierarchical relation is interpreted as _meronymy_, denoting a constituent parts of the package. Formally they are translated into owl:import statements.The module corresponding to the parent package imports modules corresponding to the child packages.
 
+[[rule:package-empty]]
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Empty packages
@@ -48,6 +51,7 @@ There shall be no empty packages.
 
 No empty packages shall be present in the model. A package is empty if it contains no child elements.
 
+[[rule:package-name]]
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Package naming
@@ -61,4 +65,4 @@ Package names shall be short lowercase strings representing an acronym or a shor
 
 *Description:*
 
-Package names shall be short, lowercase, normalised strings representing an acronym or a short name. They may serve as proxies for the namespace prefixes and used to resolve the name of any comprised elements when the prefix is not provided. This however should not be used as a primary naming method, but rather for suggesting corrections in the element name.
+All packages shall have a name. Package names shall be short, lowercase, normalised strings representing an acronym or a short name. They may serve as proxies for the namespace prefixes and used to resolve the name of any comprised elements when the prefix is not provided. This however should not be used as a primary naming method, but rather for suggesting corrections in the element name.
