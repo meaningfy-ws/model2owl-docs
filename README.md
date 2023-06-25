@@ -5,11 +5,9 @@ _Documentation of the [model2owl](https://github.com/OP-TED/model2owl)  project_
 [![Build](https://github.com/meaningfy-ws/model2owl-docs/actions/workflows/docs.yml/badge.svg)](https://github.com/OP-TED/model2owl/actions/workflows/main.yml)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/meaningfy-ws/model2owl-docs)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/meaningfy-ws/model2owl-docs)
-
 ![GitHub issues](https://img.shields.io/github/issues/meaningfy-ws/model2owl-docs)
 ![GitHub contributors](https://img.shields.io/github/contributors-anon/meaningfy-ws/model2owl-docs)
-![GitHub Repo stars](https://img.shields.io/github/stars/meaningfy-ws/model2owl-docsl?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/meaningfy-ws/model2owl-docs?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/meaningfy-ws/model2owl-docs?style=social)
 
 ![GitHub](https://img.shields.io/github/license/meaningfy-ws/model2owl-docs)
