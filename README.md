@@ -1,6 +1,6 @@
-# model2owl documentation
+# [model2owl](https://github.com/OP-TED/model2owl) documentation
 
-_Documentation of the [model2owl project](https://github.com/OP-TED/model2owl)._
+_Documentation of the [model2owl](https://github.com/OP-TED/model2owl)  project_
 
 [![Build](https://github.com/meaningfy-ws/model2owl-docs/actions/workflows/docs.yml/badge.svg)](https://github.com/OP-TED/model2owl/actions/workflows/main.yml)
 
