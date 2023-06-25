@@ -1,3 +1,0 @@
-= Transformation of the UML model into derivative artefacts
-
-*[TODO: add text and pages]*

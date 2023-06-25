@@ -1,3 +1,0 @@
-= eProcurement ontology architecture and formalisation specifications
-
-*[TODO: add text and pages]*

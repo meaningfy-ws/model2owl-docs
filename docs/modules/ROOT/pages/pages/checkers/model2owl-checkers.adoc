@@ -1,3 +1,0 @@
-= UML Convention checker inventory
-
-*[TODO: add text and pages]*
