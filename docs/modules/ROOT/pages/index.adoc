@@ -20,7 +20,7 @@ The following capabilities are implemented:
 * UML -> OWL 2 (heavyweight ontology with additional axioms suitable for reasoning purposes)
 * UML -> SHACL (data shapes suitable for representing an application profile)
 
-This documentation is evolving and aims at covering the important aspects that one might be interested in when using these tools, including:
+This documentation is evolving and aims at covering the following aspects related to use of these tools:
 
 * The architectural setup of the project and the ontology
 * The conceptual model conventions that the UML model should adhere to, in order to enable the tools to generate the best possible results.
