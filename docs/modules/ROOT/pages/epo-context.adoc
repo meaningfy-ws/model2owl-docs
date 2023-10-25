@@ -1,5 +1,5 @@
 [[sec:introduction]]
-== model2owl in eProcurement context
+== Relation to ePO
 
 This document provides a working specification of the guidelines and conventions for the eProcurement conceptual model, such that it qualifies as suitable input for the transformation scripts meant to generate the formal eProcurement ontology (ePO). The https://github.com/OP-TED/model2owl/[*model2owl*] toolset, which hosts these transformation scripts, is therefore an integral part of the ePO project.
 
