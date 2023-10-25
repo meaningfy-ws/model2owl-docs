@@ -1,9 +1,9 @@
 [[sec:introduction]]
 == Relation to ePO
 
-This document provides a working specification of the guidelines and conventions for the eProcurement conceptual model, such that it qualifies as suitable input for the transformation scripts meant to generate the formal eProcurement ontology (ePO). The https://github.com/OP-TED/model2owl/[*model2owl*] toolset, which hosts these transformation scripts, is therefore an integral part of the ePO project.
+This section provides the motivation for the https://github.com/OP-TED/model2owl/[*model2owl*] software project within the https://docs.ted.europa.eu/EPO/latest/business.html[eProcurement Ontology (ePO)] project. The business context and the project overview are detailed in the https://docs.ted.europa.eu/epo-home/ePO_Arch_Design.html[eProcurement ontology architecture and formalisation specifications].
 
-The business context and the project overview are detailed in [xref:references.adoc#ref:costetchi2020a[costetchi2020a]], while the next section provides the motivation and situates the current document within the project.
+We provide here a working specification of the guidelines and conventions for the eProcurement conceptual model, such that it qualifies as suitable input for the transformation scripts meant to generate the formal eProcurement ontology. The https://github.com/OP-TED/model2owl/[*model2owl*] toolset, which hosts these transformation scripts, is therefore an integral part of the ePO project.
 
 === Background
 
