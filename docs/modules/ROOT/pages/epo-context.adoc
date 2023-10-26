@@ -27,12 +27,12 @@ The eProcurement conceptual model must fulfil mainly four fundamental objectives
 * Provide a point of reference for system designers to gather system specifications and documentation.
 * Serve as input for development of a (more) formal model.
 
-In order to support objectives a conceptual model should fulfil the following requirements.
+In order to support the objectives, the eProcurement conceptual model must fulfil the following requirements:
 
-* Be available to all team members, to facilitate collaboration and iteration.
+* Be available to all stakeholders, to facilitate collaboration and iteration.
 * Be easily changeable, as a continuous reflection of up-to-date information.
 * Contain both visual and written forms of diagramming, to better explain the abstract concepts it may represent.
 * Establish relevant terms and concepts that will be used throughout the project.
-* Define said terms and concepts.
-* Provide a basic structure for entities of the project.
+* Define terms and concepts.
+* Provide a basic structure for the conceptual entities of the project.
 * Reduce the ambiguity while maintaining a simple and concise encoding.
