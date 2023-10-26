@@ -1,7 +1,7 @@
 [[sec:definitions]]
 == Preliminary definitions
 
-In this document three closely related and mostly overlapping domains are used interchangeably. They come from the worlds of: _enterprise architecture_, _software engineering and design_ and _formal knowledge representation_. It is therefore necessary to establish the terms, especially the common ones, by defining what they mean in each of these domains.
+This documentation makes references to three closely related and overlapping domains. They come from the worlds of: _enterprise architecture_, _software engineering and design_ and _formal knowledge representation_. It is therefore necessary to establish the terms, especially the common ones, by defining what they mean in each of these domains.
 
 [[sec:cm]]
 === Conceptual Model
