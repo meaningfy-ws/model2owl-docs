@@ -6,7 +6,7 @@ This documentation makes references to three closely related and overlapping dom
 [[sec:cm]]
 === Conceptual Model
 
-A _conceptual model_ is a representation of a system that uses concepts to form said representation. A _concept_ can be viewed as an idea or notion; a unit of thought [xref:references.adoc#ref:skos-spec[skos-spec]]. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. That is why each concept needs to be well named by providing preferred and alternative labels, and a clear and precise definition supported by examples and explanatory notes.
+A _conceptual model_ is a representation of a system that uses concepts to form said representation. A _concept_ can be viewed as an idea or notion; a unit of thought [xref:references.adoc#ref:skos-spec[skos-spec]]. A concept needs to be well named by providing as many understandable labels as necessary (for example, multiple different expressions or languages), supported by a clear definition with examples and explanatory notes.
 
 The conceptual model comprises representations of concepts, their qualities or attributes and relationships to other concepts. Most commonly these are association and generalisation relations. In addition, behaviour can be represented, ranging from the concept level up to the level of the system as a whole. Behavioural aspects, however, fall out of the scope in the current specification, which addresses at the structural elements mainly.
 
