@@ -32,6 +32,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="index.html">model2owl Documentation</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
@@ -158,10 +159,10 @@
 <article class="doc">
 <h1 class="page">model2owl Project Documentation</h1>
 <div class="paragraph">
-<p>The <a href="https://github.com/OP-TED/model2owl/"><strong>model2owl</strong></a> project comprises a set of tools for transforming an UML (v2.5) model from its XMI (v2.5.1) serialisation into a formal OWL ontology, and a SHACL shape. This approach is conformant to the <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">SEMIC Style Guide</a> and with <a href="https://github.com/meaningfy-ws/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf">eProcurement Ontology Architecture specification</a>.</p>
+<p>The <a href="https://github.com/OP-TED/model2owl/"><strong>model2owl</strong></a> software project was conceived as part of the <a href="https://docs.ted.europa.eu/EPO/latest/business.html">eProcurement Ontology (ePO)</a> public procurement digitization project of the <a href="https://en.wikipedia.org/wiki/Publications_Office_of_the_European_Union">Publications Office of the European Union (OP)</a>. It comprises a <em>toolset</em>, or set of <a href="https://en.wikipedia.org/wiki/Programming_tool">programming tools</a>, for transforming an UML (v2.5) model from its XMI (v2.5.1) serialisation into a formal OWL ontology, and a SHACL shape. This approach is conformant to the <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">SEMIC Style Guide</a> and with <a href="https://github.com/OP-TED/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf">eProcurement Ontology Architecture specification</a>.</p>
 </div>
 <div class="paragraph">
-<p>The UML transformation is performed using XSLT stylesheets under the assumption that the UML model conforms to the set of conventions outlined in the <a href="https://meaningfy-ws.github.io/model2owl-docs/public-review/uml/conceptual-model-conventions.html">EPO UML conventions specification</a>. This set of UML conventions is aligned with and extends the UML conventions specified in <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">SEMIC Style Guide</a>.</p>
+<p>The UML transformation is performed using XSLT stylesheets under the assumption that the UML model conforms to the set of conventions outlined in <a href="uml/conceptual-model-conventions.html" class="xref page">ePO UML conventions</a>. This set of UML conventions is aligned with and extends the UML conventions specified in <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">SEMIC Style Guide</a>. Validation rules for the transformation confirm the conformance to these conventions.</p>
 </div>
 <div class="paragraph">
 <p>The following capabilities are implemented:</p>
@@ -186,12 +187,12 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>This documentation is evolving and aims at covering the important aspects that one might be interested in when using these tools, including:</p>
+<p>This documentation is evolving and aims at covering the following aspects related to use of these tools:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The architectural setup of the project and the ontology</p>
+<p>The architectural setup of the toolset and the ontology</p>
 </li>
 <li>
 <p>The conceptual model conventions that the UML model should adhere to, in order to enable the tools to generate the best possible results.</p>
@@ -200,15 +201,12 @@
 <p>The transformation rules applied in the process of conversion.</p>
 </li>
 <li>
-<p>The set of validation rules that realise the established conventions (and UML interpretations).</p>
+<p>The set of validation rules that check a transformation&#8217;s conformance to the established conventions (and UML interpretations).</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>This work is developed in the context of <a href="https://github.com/eprocurementontology/eprocurementontology">eProcurement ontology project</a> financed by the Digital Europe Programme and led by the <a href="https://op.europa.eu/en/">Publications Office of the European Union</a>.</p>
-</div>
-<div class="paragraph">
-<p>The tools can be used on any other ontology that is built according to the provided <a href="https://github.com/meaningfy-ws/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf">modelling architecture</a> and <a href="uml/conceptual-model-conventions.html" class="xref page">UML conceptual model conventions</a>.</p>
+<p>The tools can be used on any other ontology that is built according to the provided <a href="https://github.com/OP-TED/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf">modelling architecture</a> and <a href="uml/conceptual-model-conventions.html" class="xref page">UML conceptual model conventions</a>.</p>
 </div>
 </article>
   </div>

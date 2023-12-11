@@ -31,6 +31,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="index.html">model2owl Documentation</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
@@ -156,13 +157,13 @@
 </aside>
 <article class="doc">
 <div class="sect1">
-<h2 id="sec:introduction"><a class="anchor" href="#sec:introduction"></a>model2owl in eProcurement context</h2>
+<h2 id="sec:introduction"><a class="anchor" href="#sec:introduction"></a>Relation to ePO</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document provides a working specification of the guidelines and conventions for the eProcurement conceptual model, such that it qualifies as suitable input for the transformation scripts meant to generate the formal eProcurement ontology.</p>
+<p>This section provides the motivation for the <a href="https://github.com/OP-TED/model2owl/"><strong>model2owl</strong></a> software project within the <a href="https://docs.ted.europa.eu/EPO/latest/business.html">eProcurement Ontology (ePO)</a> project. The business context and the project overview are detailed in the <a href="https://docs.ted.europa.eu/epo-home/ePO_Arch_Design.html">eProcurement ontology architecture and formalisation specifications</a>.</p>
 </div>
 <div class="paragraph">
-<p>The business context and the project overview are detailed in [<a href="references.html#ref:costetchi2020a" class="xref page">costetchi2020a</a>], while the next section provides the motivation and situates the current document within the project.</p>
+<p>We provide here a working specification of the guidelines and conventions for the eProcurement conceptual model, such that it qualifies as suitable input for the transformation scripts meant to generate the formal eProcurement ontology. The <a href="https://github.com/OP-TED/model2owl/"><strong>model2owl</strong></a> toolset, which hosts these transformation scripts, is therefore an integral part of the ePO project.</p>
 </div>
 <div class="sect2">
 <h3 id="_background"><a class="anchor" href="#_background"></a>Background</h3>
@@ -170,13 +171,13 @@
 <p>In the eProcurement ontology project, the conceptual model was decided [<a href="references.html#ref:d2.01-2017" class="xref page">d2.01-2017</a>] to be represented in <em>Unified Modelling Language (UML)</em> [<a href="references.html#ref:uml-userguide" class="xref page">uml-userguide</a>]. It is a visual representation language that facilitates understanding and convergence between stakeholders towards a common conceptualisation of the model.</p>
 </div>
 <div class="paragraph">
-<p>Generally, the primary application of UML [<a href="references.html#ref:fowler2004" class="xref page">fowler2004</a>] for ontology design is in the specification of class diagrams initially conceived for object-oriented software. UML does not define a formal semantics that would permit to determine, from the class diagrams, whether an ontology is consistent, or to determine the correctness of the ontology implementation. Semantics in such cases becomes a subject to interpretation by the stakeholders involved in the development process and later by the users in the application and integration tasks [<a href="references.html#ref:grunninger2003" class="xref page">grunninger2003</a>].</p>
+<p>Generally, the primary application of UML [<a href="references.html#ref:fowler2004" class="xref page">fowler2004</a>] for ontology design is in the specification of class diagrams, a design formalism initially conceived for object-oriented software. UML does not define a formal <em>semantics</em> that would permit to determine, from the class diagrams, whether a corresponding ontology is consistent, or to determine the correctness of the ontology implementation. Semantics in UML is therefore subject to interpretation by the stakeholders involved in the development process, and later by the users in the application and integration tasks [<a href="references.html#ref:grunninger2003" class="xref page">grunninger2003</a>].</p>
 </div>
 <div class="paragraph">
-<p>On the other hand, UML is closer than more logic-oriented approaches to the programming languages in which enterprise applications are implemented. For this reason the current specification establishes conventions for interpretation of the UML-based conceptual model.</p>
+<p>Yet, UML is closer than more logic-oriented approaches to the programming languages in which software applications&#8201;&#8212;&#8201;typically <a href="https://en.wikipedia.org/wiki/Enterprise_software">enterprise applications</a>&#8201;&#8212;&#8201;are implemented. For this reason, the current specification establishes conventions for interpretation of the UML-based conceptual model.</p>
 </div>
 <div class="paragraph">
-<p>The UML Conceptual Model of the eProcurement domain serves as the single source of truth, which means that the formal eProcurement ontology is derived from it through a model transformation process. It is possible to generate automatically the formal ontology in RDF format [<a href="references.html#ref:rdf11" class="xref page">rdf11</a>] from the XMI (v.2.5.1) serialisation [<a href="references.html#ref:xmi2.5.1" class="xref page">xmi2.5.1</a>] of a UML (v.2.5) model [<a href="references.html#ref:uml2.5" class="xref page">uml2.5</a>], provided that <a href="transformation/uml2owl-transformation.html" class="xref page">a set of clear transformation rules</a> are established, and that <a href="uml/conceptual-model-conventions.html" class="xref page">a set of modelling conventions</a> is respected.</p>
+<p>The UML Conceptual Model of the eProcurement domain serves as the single source of truth, which means that the formal eProcurement ontology is derived from it through a model transformation process. It is possible to generate automatically the formal ontology in RDF format [<a href="references.html#ref:rdf11" class="xref page">rdf11</a>] from the XMI (v.2.5.1) serialisation [<a href="references.html#ref:xmi2.5.1" class="xref page">xmi2.5.1</a>] of a UML (v.2.5) model [<a href="references.html#ref:uml2.5" class="xref page">uml2.5</a>], provided that <a href="uml/conceptual-model-conventions.html" class="xref page">a set of modelling conventions</a> is respected, and that <a href="transformation/uml2owl-transformation.html" class="xref page">a set of clear transformation rules</a> is established.</p>
 </div>
 <div class="paragraph">
 <p>This document provides the UML modelling constraints and a set of conventional and technical recommendations for naming and structuring the UML class diagram elements: packages, classes, data types, enumerations, enumeration items, class attributes, association relation and dependency relation. These will be addressed contextually in the subsections of <a href="uml/conceptual-model-conventions.html" class="xref page">UML conventions specification</a>.</p>
@@ -204,12 +205,12 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>In order to support objectives a conceptual model should fulfil the following requirements.</p>
+<p>In order to support the objectives, the eProcurement conceptual model must fulfil the following requirements:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Be available to all team members, to facilitate collaboration and iteration.</p>
+<p>Be available to all stakeholders, to facilitate collaboration and iteration.</p>
 </li>
 <li>
 <p>Be easily changeable, as a continuous reflection of up-to-date information.</p>
@@ -221,10 +222,10 @@
 <p>Establish relevant terms and concepts that will be used throughout the project.</p>
 </li>
 <li>
-<p>Define said terms and concepts.</p>
+<p>Define terms and concepts.</p>
 </li>
 <li>
-<p>Provide a basic structure for entities of the project.</p>
+<p>Provide a basic structure for the conceptual entities of the project.</p>
 </li>
 <li>
 <p>Reduce the ambiguity while maintaining a simple and concise encoding.</p>
