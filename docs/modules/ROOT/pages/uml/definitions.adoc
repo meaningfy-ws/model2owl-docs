@@ -1,21 +1,21 @@
 [[sec:definitions]]
 == Preliminary definitions
 
-In this document three closely related and mostly overlapping domains are used interchangeably. They come from the worlds of: _enterprise architecture_, _software engineering and design_ and _formal knowledge representation_. It is therefore necessary to establish the terms, especially the common ones, by defining what they mean in each of these domains.
+This documentation makes references to three closely related and overlapping domains. They come from the worlds of: _enterprise architecture_, _software engineering and design_ and _formal knowledge representation_. It is therefore necessary to establish the terms, especially the common ones, by defining what they mean in each of these domains.
 
 [[sec:cm]]
 === Conceptual Model
 
-A _conceptual model_ is a representation of a system that uses concepts to form said representation. A _concept_ can be viewed as an idea or notion; a unit of thought [xref:references.adoc#ref:skos-spec[skos-spec]]. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. That is why each concept needs to be well named by providing preferred and alternative labels, and a clear and precise definition supported by examples and explanatory notes.
+A _conceptual model_ is a representation of a system that uses concepts to form said representation. A _concept_ can be viewed as an idea or notion; a unit of thought [xref:references.adoc#ref:skos-spec[skos-spec]] in the mind, which can be put into writing -- _realized_ as a representation -- in various forms (such as part of a diagram or mind map). A concept on paper needs to be well named by providing as many understandable labels as necessary (for example, multiple different expressions or languages), supported by a clear definition with examples and explanatory notes.
 
-The conceptual model comprises representations of concepts, their qualities or attributes and relationships to other concepts. Most commonly these are association and generalisation relations. In addition, behaviour can be represented, ranging from the concept level up to the level of the system as a whole. Behavioural aspects, however, fall out of the scope in the current specification, which addresses at the structural elements mainly.
+The conceptual model comprises representations of realized concepts, their qualities or attributes, and relationships to other concepts. Most commonly, these are _association_ and _generalisation_ relations. In addition, behaviour can be represented, ranging from the concept level up to the level of the system as a whole. Behavioural aspects, however, fall out of the scope of the current specification, which addresses only the structural elements.
 
 [[sec:uml]]
 === Unified Modelling Language (UML)
 
-The _Unified Modelling Language (UML)_ is a general-purpose, developmental, modelling language in the field of software engineering that is intended to provide a standard way to visualise the design of a system [xref:references.adoc#ref:uml-userguide[uml-userguide]].
+The _Unified Modelling Language (UML)_ is a general-purpose, developmental, computer modelling language in the field of software engineering, that is intended to provide a standard way to visualise the design of a system [xref:references.adoc#ref:uml-userguide[uml-userguide]]. It is a language that facilitates the realization and visualization (diagramming) of a conceptual model, such as the eProcurement conceptual model, which represents the real-world subject matter of public procurement.
 
-This set of specifications is based on the assumption that the conceptual models are represented with UML. Moreover, for the purposes of this convention only the structural elements of UML are considered, and in particular those comprising a class diagram. Next, the most important structural elements are introduced.
+The set of specifications in this documentation is based on the assumption that the conceptual models are represented with UML. Moreover, for the purposes of the convention used, only the structural elements of UML are considered, in particular those comprising a class diagram. The most important structural elements are described below.
 
 A _class_ represents a discrete concept within the domain being modelled. It is a description of a set of individual objects that share the same attributes, behaviour, relationships. Graphically, a class is rendered as a rectangle [xref:references.adoc#ref:uml-userguide[uml-userguide]].
 

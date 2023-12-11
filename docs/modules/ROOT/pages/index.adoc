@@ -8,9 +8,9 @@
 :docinfo: shared
 
 
-The https://github.com/OP-TED/model2owl/[*model2owl*] project comprises a set of tools for transforming an UML (v2.5) model from its XMI (v2.5.1) serialisation into a formal OWL ontology, and a SHACL shape. This approach is conformant to the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC Style Guide] and with https://github.com/meaningfy-ws/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf[eProcurement Ontology Architecture specification].
+The https://github.com/OP-TED/model2owl/[*model2owl*] software project was conceived as part of the https://docs.ted.europa.eu/EPO/latest/business.html[eProcurement Ontology (ePO)] public procurement digitization project of the https://en.wikipedia.org/wiki/Publications_Office_of_the_European_Union[Publications Office of the European Union (OP)]. It comprises a _toolset_, or set of https://en.wikipedia.org/wiki/Programming_tool[programming tools], for transforming an UML (v2.5) model from its XMI (v2.5.1) serialisation into a formal OWL ontology, and a SHACL shape. This approach is conformant to the https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC Style Guide] and with https://github.com/OP-TED/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf[eProcurement Ontology Architecture specification].
 
-The UML transformation is performed using XSLT stylesheets under the assumption that the UML model conforms to the set of conventions outlined in the https://meaningfy-ws.github.io/model2owl-docs/public-review/uml/conceptual-model-conventions.html[EPO UML conventions specification]. This set of UML conventions is aligned with and extends the UML conventions specified in https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC Style Guide].
+The UML transformation is performed using XSLT stylesheets under the assumption that the UML model conforms to the set of conventions outlined in xref:uml/conceptual-model-conventions.adoc[ePO UML conventions]. This set of UML conventions is aligned with and extends the UML conventions specified in https://semiceu.github.io/style-guide/1.0.0/index.html[SEMIC Style Guide]. Validation rules for the transformation confirm the conformance to these conventions.
 
 The following capabilities are implemented:
 
@@ -20,14 +20,11 @@ The following capabilities are implemented:
 * UML -> OWL 2 (heavyweight ontology with additional axioms suitable for reasoning purposes)
 * UML -> SHACL (data shapes suitable for representing an application profile)
 
-This documentation is evolving and aims at covering the important aspects that one might be interested in when using these tools, including:
+This documentation is evolving and aims at covering the following aspects related to use of these tools:
 
-* The architectural setup of the project and the ontology
+* The architectural setup of the toolset and the ontology
 * The conceptual model conventions that the UML model should adhere to, in order to enable the tools to generate the best possible results.
 * The transformation rules applied in the process of conversion.
-* The set of validation rules that realise the established conventions (and UML interpretations).
+* The set of validation rules that check a transformation's conformance to the established conventions (and UML interpretations).
 
-This work is developed in the context of https://github.com/eprocurementontology/eprocurementontology[eProcurement ontology project] financed by the Digital Europe Programme and led by the https://op.europa.eu/en/[Publications Office of the European Union].
-
-The tools can be used on any other ontology that is built according to the provided https://github.com/meaningfy-ws/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf[modelling architecture] and xref:uml/conceptual-model-conventions.adoc[UML conceptual model conventions].
-
+The tools can be used on any other ontology that is built according to the provided https://github.com/OP-TED/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf[modelling architecture] and xref:uml/conceptual-model-conventions.adoc[UML conceptual model conventions].

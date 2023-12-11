@@ -89,7 +89,7 @@ Kunze, John, and Thomas Baker. 2007. “The Dublin Core Metadata Element Set.”
 
 - *[[[ref:semic-style-guide]]semic-style-guide]* SEMIC Style guide v1.0.0, 2023, https://semiceu.github.io/style-guide/1.0.0/index.html
 
-- *[[[ref:epo-arch]]epo-arch]* Costetchi, E. (2020). EProcurement ontology architecture and formalisation specifications. Recommendation, Publications Office of the European Union. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf
+- *[[[ref:epo-arch]]epo-arch]* Costetchi, E. (2020). EProcurement ontology architecture and formalisation specifications. Recommendation, Publications Office of the European Union. Available at: https://github.com/OP-TED/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf
 
 - *[[[ref:oslo-rules]]oslo-rules]* Thijs, G. (2019) OSLO MODELLERINGSREGELS. Available at: https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf
 
