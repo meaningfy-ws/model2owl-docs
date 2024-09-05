@@ -19,6 +19,7 @@ The following capabilities are implemented:
 * UML -> OWL 2 (lightweight ontology suitable as a core vocabulary)
 * UML -> OWL 2 (heavyweight ontology with additional axioms suitable for reasoning purposes)
 * UML -> SHACL (data shapes suitable for representing an application profile)
+* UML -> SVRL (Compliance report in SVRL format)
 
 This documentation is evolving and aims at covering the following aspects related to use of these tools:
 
@@ -28,3 +29,6 @@ This documentation is evolving and aims at covering the following aspects relate
 * The set of validation rules that check a transformation's conformance to the established conventions (and UML interpretations).
 
 The tools can be used on any other ontology that is built according to the provided https://github.com/OP-TED/model2owl/blob/master/docs/ontology-architecture/ontology-architecture.pdf[modelling architecture] and xref:uml/conceptual-model-conventions.adoc[UML conceptual model conventions].
+
+The toolset can be used in two ways. The first way offers a simplified setup based on https://docs.github.com/en/actions[GitHub Actions] that requires no infrastructure and is available online. It promotes a GIT-based workflow where input, configuration and transformed artefacts are stored in a repository and a user commit triggers execution of the _model2owl_ transformation. Details of that method can be found https://github.com/OP-TED/model2owl?tab=readme-ov-file#online[in the project description].
+Alternatively, the software can be installed and executed locally. The user can interact with the software through a https://www.gnu.org/software/make/[Make]-based command line interface. Please check https://github.com/OP-TED/model2owl?tab=readme-ov-file#locally[the installation, configuration and usage instruction] to learn more.
